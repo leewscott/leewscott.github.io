@@ -1,138 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website of Lee Scott">
     <title>Lee Scott</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
-            color: #333;
+            height: 100vh;
         }
 
         header {
+            text-align: center;
             margin-bottom: 20px;
         }
 
-        img {
+        header img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
             object-fit: cover;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
-        h1 {
-            margin: 10px 0;
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #777;
         }
 
         p {
+            text-align: center;
             max-width: 600px;
-            margin: 10px auto;
-            line-height: 1.5;
+            margin: 20px auto;
+            line-height: 1.6;
         }
 
         .buttons {
-            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
         }
 
         .buttons a {
-            display: inline-block;
             text-decoration: none;
-            background-color: #0073e6;
             color: #fff;
             padding: 10px 20px;
             border-radius: 5px;
-            margin: 5px;
-            transition: background-color 0.3s;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
         }
 
-        .buttons a:hover {
-            background-color: #005bb5;
+        .buttons .cv {
+            background-color: #0077b5; /* LinkedIn blue */
+        }
+
+        .buttons .cv:hover {
+            background-color: #005582;
+        }
+
+        .buttons .contact {
+            background-color: #333;
+        }
+
+        .buttons .contact:hover {
+            background-color: #555;
         }
 
         footer {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
         }
 
         footer a {
+            color: #777;
             text-decoration: none;
-            color: #333;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
+            margin: 0 5px;
         }
 
         footer a:hover {
-            color: #0073e6;
-        }
-
-        footer img {
-            width: 20px;
-            height: 20px;
+            text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
     <header>
-        <img src="your-photo.jpg" alt="Lee Scott">
+        <img src="Black Background.jpg" alt="Profile Image">
         <h1>Lee Scott</h1>
-        <h2>Student</h2>
-        <p>
-            Hello! I'm Lee Scott, a passionate learner and aspiring professional. I am constantly exploring new
-            opportunities and seeking to grow my skills in various fields.
-        </p>
-        <div class="buttons">
-            <a href="CV.pdf" target="_blank">View CV</a>
-            <a href="#contact-form">Contact Me</a>
-        </div>
     </header>
-
-    <section id="contact-form">
-        <h2>Contact Me</h2>
-        <form action="mailto:contact@lee-scott.com" method="post" enctype="text/plain">
-            <div>
-                <input type="text" name="name" placeholder="Your Name" required>
-            </div>
-            <div>
-                <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div>
-                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-            </div>
-            <div>
-                <button type="submit">Send</button>
-            </div>
-        </form>
-    </section>
-
+    <div class="buttons">
+        <a href="CV.pdf" class="cv" target="_blank">View CV</a>
+        <a href="mailto:contact@lee-scott.com" class="contact">Contact Me</a>
+    </div>
     <footer>
-        <a href="https://www.linkedin.com/in/leewscott">
-            <img src="linkedin-icon.png" alt="LinkedIn">LinkedIn
-        </a>
-        <a href="https://github.com/leescxtt">
-            <img src="github-icon.png" alt="GitHub">GitHub
-        </a>
-        <a href="mailto:contact@lee-scott.com">
-            <img src="email-icon.png" alt="Email">Email
-        </a>
+        <p>&copy; 2024 Lee Scott. All rights reserved.</p>
+        <p>
+            <a href="https://github.com/leescxtt" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/leewscott" target="_blank">LinkedIn</a> |
+        </p>
     </footer>
 </body>
-
 </html>
